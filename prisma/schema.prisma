@@ -20,6 +20,7 @@ model School {
   smis_code         Int         @unique //! ต้อง unique เท่านั้น เวลา ใช้เป็น fp ของต่างตาราง นอกจาก id
   obec_code         Int         @unique //! ต้อง unique เท่านั้น เวลา ใช้เป็น fp ของต่างตาราง นอกจาก id
   school_name       String
+  type_code         Int
   type_education    String // ประเภทการศึกษาที่เปิดชั้นเรียน
   district_code     Int // รหัสอำเภอ
   district          String //อำเภอ
