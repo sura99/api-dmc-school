@@ -36,6 +36,7 @@ model School {
   onetm3s           Onetm3[]
   nts               Nt[]
   schoolmis         Schoolmis[]
+  teachers          Teacher[]
 }
 
 model Onetp6 {
@@ -195,3 +196,21 @@ model Schoolmis {
   // ใช้รหัส smis เชื่อมต่อกับ school
   school School @relation(fields: [smis_code], references: [smis_code])
 }
+
+model Teacher {
+  id          Int    @id @default(autoincrement())
+  year_data   String
+  smis_code   Int
+  moe_code    Int
+  school_name String
+  director          String
+  sub_director      String
+  teacher_servant   String
+  teacher_goverment String
+  teacher_employee  String
+  total_all   String
+
+  // ใช้รหัส smis เชื่อมต่อกับ school
+  school School @relation(fields: [smis_code], references: [smis_code])
+}
+
