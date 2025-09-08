@@ -15,6 +15,7 @@ export default {
                     onetp6s:true,
                     onetm3s:true,
                     nts:true,
+                    ccts:true,
                 }
             })
             return schools
@@ -34,6 +35,7 @@ export default {
                     onetp6s:true,
                     onetm3s:true,
                     nts:true,
+                    ccts:true,
                 },
                 orderBy: {
                     id: "desc"
@@ -59,6 +61,7 @@ export default {
                     onetp6s:true,
                     onetm3s:true,
                     nts:true,
+                    ccts:true,
                 }
             })
             return smis_code
